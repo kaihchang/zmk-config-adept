@@ -46,7 +46,7 @@
         device = <&trackball>;
         input-processors =
             <&pointer_accel>,
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
 
         scroll {
             layers = <1>; // scroll_layer
