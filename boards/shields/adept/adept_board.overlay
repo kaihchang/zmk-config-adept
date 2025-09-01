@@ -44,7 +44,10 @@
     trackball_listener { // listener for input device
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&pointer_accel>;
+        input-processors =
+            <&pointer_accel>,
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+
         scroll {
             layers = <1>; // scroll_layer
             input-processors =
