@@ -67,7 +67,7 @@
             bindings = <
         //╭────────────────┬──────────┬─────────┬──────────────────────────────╮
         //│  Left Tab      │ Previous │ Next    │ scroll_layer/Right Tab       │
-            &kp LC(PAGE_UP)  &mkp MB4   &mkp MB5  &kp LC(PAGE_DOWN)     
+            &kp LC(PAGE_UP)  &mkp MB4   &mkp MB5  &lt 1 LC(PAGE_DOWN)     
         //├────────────────┼──────────┼─────────┼──────────────────────────────┤
         //│  Left Click    │          │         │ Right Click                  │
               &mkp MB1                            &mkp MB2     
