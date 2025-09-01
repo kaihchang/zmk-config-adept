@@ -1,0 +1,11 @@
+file_format: "1"
+id: kai_adept
+name: Kai Adept
+type: shield
+url: 
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - trackball
+siblings:
+  - adept_board

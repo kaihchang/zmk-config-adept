@@ -1,0 +1,4 @@
+# No whitespace after the comma or in your part name!
+
+config SHIELD_ADEPT_BOARD
+    def_bool $(shields_list_contains,adept_board)
