@@ -40,4 +40,17 @@
     chosen {
         zmk,kscan = &kscan0;
     };
+
+    trackball_listener { // listener for input device
+        compatible = "zmk,input-listener";
+        device = "&trackball";
+        input-processors = <&pointer_accel>;
+        scroll {
+            layers = <1>; // scroll_layer
+            input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_xy_scaler 1 16>,
+            <&zip_xy_to_scroll_mapper>;
+        };
+    };
 };
