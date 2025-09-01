@@ -21,6 +21,10 @@
 
 /* More about input processors: https://zmk.dev/docs/keymaps/input-processors#input-processors-overview */
 
+&physical_layout0 {
+    transform = <&matrix_transform>;
+};
+
 &kscan0 {
     input-gpios
     = <&gpio0  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // sw_1
