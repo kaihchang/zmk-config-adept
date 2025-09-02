@@ -54,6 +54,12 @@
             bindings = <&to 1>;
         };
 
+        combo_close_tab {
+            timeout-ms =<70>;
+            key-positions = <1 2>;
+            bindings = <&kp LC(W)>;
+        };
+
         combo_reset {
             timeout-ms = <100>;
             key-positions = <0 3 4 5>;
