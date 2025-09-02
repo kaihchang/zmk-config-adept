@@ -43,27 +43,45 @@
         compatible = "zmk,combos";
 
         combo_mb3 {
-            timeout-ms = <70>;
+            timeout-ms = <100>;
             key-positions = <4 5>;
             bindings = <&mkp MB3>;
         };
 
-        combo_scroll {
+        combo_scroll_layer {
             timeout-ms = <70>;
             key-positions = <2 3>;
             bindings = <&to 1>;
         };
 
+        combo_esc {
+            timeout-ms = <70>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+
         combo_close_tab {
-            timeout-ms =<70>;
+            timeout-ms = <70>;
             key-positions = <1 2>;
             bindings = <&kp LC(W)>;
         };
 
-        combo_reset {
-            timeout-ms = <100>;
+        combo_switch_app {
+            timeout-ms = <70>;
+            key-positions = <0 4>;
+            bindings = <&kp LA(TAB)>;
+        };
+
+        combo_close_app {
+            timeout-ms = <70>;
+            key-positions = <3 5>;
+            bindings = <&kp LA(F4)>;
+        };
+
+        combo_bootloader {
+            timeout-ms = <150>;
             key-positions = <0 3 4 5>;
-            bindings = <&sys_reset>;
+            bindings = <&bootloader>;
         };
     };
 
