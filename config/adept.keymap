@@ -74,7 +74,7 @@
 
         combo_close_app {
             timeout-ms = <70>;
-            key-positions = <3 5>;
+            key-positions = <0 3>;
             bindings = <&kp LA(F4)>;
         };
 
