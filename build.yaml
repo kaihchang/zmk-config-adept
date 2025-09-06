@@ -1,7 +1,7 @@
 include:
   - board: seeeduino_xiao_ble
     shield: adept_board
-    snippet: zmk-usb-logging
+    # snippet: zmk-usb-logging
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
