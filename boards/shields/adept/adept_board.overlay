@@ -2,6 +2,7 @@
 #include "pmw3610.dtsi"
 #include "adept-layouts.dtsi"
 #include <input/processors.dtsi>
+#include <input/processors/xyz.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <behaviors/input_gestures_accel.dtsi>
 
@@ -20,6 +21,10 @@
 };
 
 /* More about input processors: https://zmk.dev/docs/keymaps/input-processors#input-processors-overview */
+
+&zip_report_rate_limit { // from badjeff's https://github.com/badjeff/zmk-input-processor-report-rate-limit
+    limit-ble-only;
+};
 
 &physical_layout0 {
     transform = <&matrix_transform>;
@@ -47,6 +52,7 @@
         device = <&trackball>;
         input-processors =
             <&pointer_accel>,
+            <&zip_report_rate_limit 8>, // from badjeff's https://github.com/badjeff/zmk-input-processor-report-rate-limit
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
 
         scroll {
