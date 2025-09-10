@@ -15,6 +15,9 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: efogdev
       revision: main
+    - name: zmk-report-rate-limit
+      remote: efogdev
+      revision: main
     - name: zmk-pointing-acceleration-alpha
       remote: nuovotaka
       revision: main
