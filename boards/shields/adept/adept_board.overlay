@@ -48,7 +48,7 @@
         device = <&trackball>;
         input-processors =
             <&pointer_accel>,
-            <&zip_ble_report_rate_limit 8>, // from efogdev's https://github.com/efogdev/zmk-report-rate-limit/blob/main/dts/input/processors/report_rate_limit.dtsi
+            <&zip_ble_report_rate_limit>, // from efogdev's https://github.com/efogdev/zmk-report-rate-limit/blob/main/dts/input/processors/report_rate_limit.dtsi
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
 
         scroll {
