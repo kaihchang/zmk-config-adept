@@ -22,10 +22,6 @@
 
 /* More about input processors: https://zmk.dev/docs/keymaps/input-processors#input-processors-overview */
 
-&zip_report_rate_limit { // from badjeff's https://github.com/badjeff/zmk-input-processor-report-rate-limit
-    limit-ble-only;
-};
-
 &physical_layout0 {
     transform = <&matrix_transform>;
 };
